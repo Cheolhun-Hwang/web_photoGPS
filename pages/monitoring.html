@@ -109,12 +109,10 @@
                         <i class="fa fa-user fa-fw"></i> 000님 반간습니다. <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> 마이페이지</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> 로그아웃</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -128,12 +126,12 @@
                     <ul class="nav" id="side-menu">
                         <li class="sidebar-search">
                             <div class="input-group custom-search-form col-md-12">
-                                <div class="col-md-4" >
-                                    <img id="uProfileImage" src="./assets/images/noimage.png" />
+                                <div class="col-md-6" >
+                                    <img style="width:90px;height:90px;" id="uProfileImage" src="./assets/images/noimage.png" class="img-rounded"/>
                                 </div>
                                 <div class="col-md-6">
-                                    <h5>000 님</h5>
-                                    <h9>[ 소속 - 직급]</h9>
+                                    <h4>000 님</h4>
+                                    <h6>[ 소속 - 직급]</h6>
                                 </div>
                             </div>
                             <!-- /input-group -->
@@ -209,12 +207,6 @@
                                 <tbody id="datas">
                                 </tbody>
                             </table>
-                            <!-- /.table-responsive -->
-                            <!-- <div class="well">
-                                <h4>DataTables Usage Information</h4>
-                                <p>DataTables is a very flexible, advanced tables plugin for jQuery. In SB Admin, we are using a specialized version of DataTables built for Bootstrap 3. We have also customized the table headings to use Font Awesome icons in place of images. For complete documentation on DataTables, visit their website at <a target="_blank" href="https://datatables.net/">https://datatables.net/</a>.</p>
-                                <a class="btn btn-default btn-lg btn-block" target="_blank" href="https://datatables.net/">View DataTables Documentation</a>
-                            </div> -->
                         </div>
                         <!-- /.panel-body -->
                         <div align=center>
@@ -236,9 +228,9 @@
 
                 <div class="col-lg-6">
                     <div class="col-lg-12">
-                        <ul class="nav navbar-top-links navbar-right">
+                        <ul  class="nav navbar-top-links navbar-right">
                                 <!-- /.dropdown -->
-                                <li class="dropdown">
+                                <li id="now_progress" class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                         <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
                                     </a>
@@ -248,11 +240,10 @@
                                                 <div>
                                                     <p>
                                                         <strong>안전 / 위험</strong>
-                                                        <span class="pull-right text-muted">40 건</span>
+                                                        <span class="board_text pull-right text-muted">0 건</span>
                                                     </p>
                                                     <div class="progress progress-striped active">
-                                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="1000" style="width: 4%">
-                                                            <span class="sr-only">40% Complete (success)</span>
+                                                        <div class="board_count progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -264,11 +255,10 @@
                                                 <div>
                                                     <p>
                                                         <strong>주차 / 교통</strong>
-                                                        <span class="pull-right text-muted">20 건</span>
+                                                        <span class="board_text pull-right text-muted">0 건</span>
                                                     </p>
                                                     <div class="progress progress-striped active">
-                                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="1000" style="width: 2%">
-                                                            <span class="sr-only">20% Complete</span>
+                                                        <div class="board_count progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -280,11 +270,10 @@
                                                 <div>
                                                     <p>
                                                         <strong>신규 설치</strong>
-                                                        <span class="pull-right text-muted">60 건</span>
+                                                        <span class="board_text pull-right text-muted">0 건</span>
                                                     </p>
                                                     <div class="progress progress-striped active">
-                                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="1000" style="width: 6%">
-                                                            <span class="sr-only">60% Complete (warning)</span>
+                                                        <div class="board_count progress-bar progress-bar-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -296,11 +285,10 @@
                                                 <div>
                                                     <p>
                                                         <strong>보수요청</strong>
-                                                        <span class="pull-right text-muted">80 건</span>
+                                                        <span class="board_text pull-right text-muted">0 건</span>
                                                     </p>
                                                     <div class="progress progress-striped active">
-                                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="1000" style="width: 8%">
-                                                            <span class="sr-only">80% Complete (danger)</span>
+                                                        <div class="board_count progress-bar progress-bar-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -312,11 +300,10 @@
                                                 <div>
                                                     <p>
                                                         <strong>환경 / 쓰레기</strong>
-                                                        <span class="pull-right text-muted">80 건</span>
+                                                        <span class="board_text pull-right text-muted">0 건</span>
                                                     </p>
                                                     <div class="progress progress-striped active">
-                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="1000" style="width: 8%">
-                                                            <span class="sr-only">80% Complete (danger)</span>
+                                                        <div class="board_count progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -328,11 +315,10 @@
                                                 <div>
                                                     <p>
                                                         <strong>기 타</strong>
-                                                        <span class="pull-right text-muted">80 건</span>
+                                                        <span class="board_text pull-right text-muted">0 건</span>
                                                     </p>
                                                     <div class="progress progress-striped active">
-                                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="1000" style="width: 8%">
-                                                            <span class="sr-only">80% Complete (danger)</span>
+                                                        <div class="board_count progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -342,66 +328,10 @@
                                     <!-- /.dropdown-tasks -->
                                 </li>
                                 <!-- /.dropdown -->
-                                <li class="dropdown">
+                                <li id="flag_bar" class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-bell fa-fw" style="color:red;"></i> <span class="badge">1</span>  <i class="fa fa-caret-down" style="color:red"></i>
+                                        <i class="fa fa-bell fa-fw" style=""></i> <span class="badge"></span>
                                     </a>
-                                    <ul class="dropdown-menu dropdown-messages">
-                                            <li>
-                                                <a href="#">
-                                                    <div>
-                                                        <strong>John Smith</strong>
-                                                        <span class="pull-right text-muted">
-                                                            <em>Yesterday</em>
-                                                        </span>
-                                                    </div>
-                                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                                                </a>
-                                            </li>
-                                            <li class="divider"></li>
-                                            <li>
-                                                <a href="#">
-                                                    <div>
-                                                        <strong>John Smith</strong>
-                                                        <span class="pull-right text-muted">
-                                                            <em>Yesterday</em>
-                                                        </span>
-                                                    </div>
-                                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                                                </a>
-                                            </li>
-                                            <li class="divider"></li>
-                                            <li>
-                                                <a href="#">
-                                                    <div>
-                                                        <strong>John Smith</strong>
-                                                        <span class="pull-right text-muted">
-                                                            <em>Yesterday</em>
-                                                        </span>
-                                                    </div>
-                                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                                                </a>
-                                            </li>
-                                            <li class="divider"></li>
-                                            <li>
-                                                <a href="#">
-                                                    <div>
-                                                        <strong>John Smith</strong>
-                                                        <span class="pull-right text-muted">
-                                                            <em>Yesterday</em>
-                                                        </span>
-                                                    </div>
-                                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                                                </a>
-                                            </li>
-                                            <!-- <li class="divider"></li> -->
-                                            <!-- <li>
-                                                <a class="text-center" href="#">
-                                                    <strong>Read All Messages</strong>
-                                                    <i class="fa fa-angle-right"></i>
-                                                </a>
-                                            </li> -->
-                                        </ul>
                                     <!-- /.dropdown-alerts -->
                                 </li>
                             </ul>
@@ -416,6 +346,50 @@
         </div>
         <!-- /#page-wrapper -->
 
+        <div class="modal fade" id="table_info_Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="ModalLabel">상세정보 보기</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="col-sm-7">
+                        <img id="modal_image" src="./assets/images/noimage.png" onerror="this.src='./assets/images/noimage.png'" style="width:363px;"/>
+                    </div>
+                    <div class="col-sm-5">
+                        <form>
+                            <div class="form-group" style="margin-bottom:20px;">
+                                <label for="recipient-name" class="control-label">제보자 :</label>
+                                <h5 id="modal_user" style="text-align:center;">테스트</h5>
+                            </div>
+                            <div class="form-group" style="margin-bottom:20px;">
+                                <label for="message-text" class="control-label">소  속:</label>
+                                <h6 id="modal_party" style="text-align:center;">테스트</h6>
+                            </div>
+                            <div class="form-group" style="margin-bottom:20px;">
+                                <label for="message-text" class="control-label">제보일:</label>
+                                <p id="modal_date" style="text-align:center;">0000-00-00 00:00:00</p>
+                            </div>
+                            <div class="form-group" style="margin-bottom:20px;">
+                                <label for="message-text" class="control-label">분  야:</label>
+                                <h5 id="modal_field" style="text-align:center;">000</h5>
+                            </div>
+                            <div class="form-group" style="margin-bottom:20px;">
+                                <label for="message-text" class="control-label">제보내용:</label>
+                                <p id="modal_content" style="text-align:center;">테스트</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+        </div>
     </div>
     <!-- /#wrapper -->
 
@@ -443,245 +417,11 @@
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
 
     <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script src="./assets/js/monitoring.js"></script>
     <script>
-        var dataArray=[];
         $(document).ready(function() {
-            
-            firebase_init(dataArray);
-
-        });
-
-        function firebase_init(dataArray){
-            // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyDJn-l0na0j2OKYLiyfnizalBy785XoL8A",
-                authDomain: "storagefirebase-45eef.firebaseapp.com",
-                databaseURL: "https://storagefirebase-45eef.firebaseio.com",
-                projectId: "storagefirebase-45eef",
-                storageBucket: "storagefirebase-45eef.appspot.com",
-                messagingSenderId: "667190904245"
-            };
-            firebase.initializeApp(config);
-
-            var database = firebase.database();
-            
-            database.ref('service').on('value', function(snapshop){
-                if(snapshop.val() == null){
-                    alert('Database null... Firebase Check');
-                }else{
-                    snapshop.forEach(function(child){
-                        var item = new Object();
-                        item.lat =  child.val().lat;
-                        item.lon = child.val().lon;
-                        item.uAddress = child.val().uAddress;
-                        item.uContext = child.val().uContext;
-                        item.uField = child.val().uField;
-                        item.uImageUrl = child.val().uImageUrl;
-                        item.uName = child.val().uName;
-                        item.uRank = child.val().uRank;
-                        item.uUploadDate = child.val().uUploadDate;
-                        item.uid = child.val().uid;
-
-                        dataArray.push(item);
-                        addRow('datas', item);
-                    });
-
-                    initMap(dataArray);
-                    pagination();
-                }
-            });
-        }
-
-        function addRow(tableid, target) {
-            var table = document.getElementById(tableid);
-            var rowlen = table.rows.length;
-            var before = table.innerHTML;
-
-            var after = '<tr onclick="rowClick('+rowlen+');">'+'<td>'+(rowlen+1)+'</td>'+
-                        '<td>'+target.uRank+'</td>'+
-                        '<td>'+target.uName+'</td>'+
-                        '<td>'+target.uUploadDate+'</td>'+
-                        '<td>'+target.uField+'</td>'+
-                        '<td>'+'<img class="imgs" src="'+target.uImageUrl+'" />'+'</td></tr>';
-
-            table.innerHTML = after+before;
-        }
-
-        function rowClick(index){
-            alert(index);
-        }
-
-        function initMap(locations) {
-            var kor = {lat: 37.335887, lng: 126.584063};
-
-            // Create an array of alphabetical characters used to label the markers.
-            var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-
-            var iconBase = 'assets/images/';
-            var icons = {
-                safe_danger: {
-                    icon: new google.maps.MarkerImage(iconBase + 'safe_danger_marker.png',new google.maps.Size(71, 71),
-                    new google.maps.Point(-14, -14),new google.maps.Point(17, 34), new google.maps.Size(45, 45))
-                },
-                green: {
-                    icon: new google.maps.MarkerImage(iconBase + 'green_marker.png',new google.maps.Size(71, 71),
-                    new google.maps.Point(-14, -14),new google.maps.Point(17, 34), new google.maps.Size(45, 45))
-                },
-                new: {
-                    icon: new google.maps.MarkerImage(iconBase + 'new_marker.png',new google.maps.Size(71, 71),
-                    new google.maps.Point(-14, -14),new google.maps.Point(17, 34), new google.maps.Size(45, 45))
-                },
-                parking: {
-                    icon: new google.maps.MarkerImage(iconBase + 'parking_marker.png',new google.maps.Size(71, 71),
-                    new google.maps.Point(-14, -14),new google.maps.Point(17, 34), new google.maps.Size(45, 45))
-                },
-                req: {
-                    icon: new google.maps.MarkerImage(iconBase + 'req_marker.png',new google.maps.Size(71, 71),
-                    new google.maps.Point(-14, -14),new google.maps.Point(17, 34), new google.maps.Size(45, 45))
-                },
-                etc: {
-                    icon: new google.maps.MarkerImage(iconBase + 'etc_marker.png',new google.maps.Size(71, 71),
-                    new google.maps.Point(-14, -14),new google.maps.Point(17, 34), new google.maps.Size(45, 45))
-                }
-            };
-
-            if(locations.length <1){
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 9,
-                    center: kor
-                });
-                var marker = new google.maps.Marker({
-                    position: kor,
-                    map: map
-                });
-            }else{
-                var markers=[];
-                for(var i=0; i<locations.length;i++){
-                    var item = locations[i];
-                    if(i == 0){
-                        var gps = {lat: item.lat, lng: item.lon};
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            zoom: 13,
-                            center: gps
-                        });
-                    }
-
-                    
-                    var image = '';
-
-                    if(item.uField.replace(/ /gi, "").includes('기타')){
-                        image = icons.etc.icon;
-                    }else if(item.uField.replace(/ /gi, "").includes('환경')){
-                        image = icons.green.icon;
-                    }else if(item.uField.replace(/ /gi, "").includes('보수요청')){
-                        image = icons.req.icon;
-                    }else if(item.uField.replace(/ /gi, "").includes('신규')){
-                        image = icons.new.icon;
-                    }else if(item.uField.replace(/ /gi, "").includes('주차')){
-                        image = icons.parking.icon;
-                    }else if(item.uField.replace(/ /gi, "").includes('안전')){
-                        image = icons.safe_danger.icon;
-                    }
-
-                    var marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(item.lat, item.lon),
-                        icon: image
-                    });
-
-                    marker.addListener('click', function() {
-                        alert("Marker");
-                    });
-                    markers.push(marker);
-                }
-                
-                // Add a marker clusterer to manage the markers.
-                var markerCluster = new MarkerClusterer(map, markers,
-                    {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-                }
-
-                markerCluster.addListener('click', function(){
-                    alert('cluster');
-                });
-                
-            }
-
-            //Table Pager...........
-            function pagination(){
-                var req_num_row=6;
-                var $tr=jQuery('#datas tr');
-                var total_num_row=$tr.length;
-                var num_pages=0;
-                if(total_num_row % req_num_row ==0){
-                    num_pages=total_num_row / req_num_row;
-                }
-                if(total_num_row % req_num_row >=1){
-                    num_pages=total_num_row / req_num_row;
-                    num_pages++;
-                    num_pages=Math.floor(num_pages++);
-                }
-                for(var i=1; i<=num_pages; i++){
-                    jQuery('.pagination').append('<li><a href="#">'+i+'</a></li>');
-                }
-                $tr.each(function(i){
-                    jQuery(this).hide();
-                    if(i+1 <= req_num_row){
-                        $tr.eq(i).show();
-                    }
-                
-                });
-                jQuery('.pagination a').click(function(e){
-                    e.preventDefault();
-                    $tr.hide();
-                    var page=jQuery(this).text();
-                    var temp=page-1;
-                    var start=temp*req_num_row;
-                    //alert(start);
-                    
-                    for(var i=0; i< req_num_row; i++){
-                        
-                        $tr.eq(start+i).show();
-                    
-                    }
-                });
-            }
-
-            //search Function
-            function tableFilter() {
-                // Declare variables 
-                var input, filter, table, paging;
-                input = document.getElementById("input_table_filter");
-                filter = input.value.toUpperCase().replace(/ /gi, "");
-                table = document.getElementById('datas');
-                paging = document.getElementsByClassName('pagination');
-
-                if(filter){
-                    table.innerHTML = "";
-                    for(var i = 0 ; i< dataArray.length;i++){
-                        var row = dataArray[i];
-                        if(row.uField.toUpperCase().replace(/ /gi, "").includes(filter) ||
-                            row.uRank.toUpperCase().replace(/ /gi, "").includes(filter) ||
-                            row.uName.toUpperCase().replace(/ /gi, "").includes(filter) ||
-                            row.uUploadDate.toUpperCase().replace(/ /gi, "").includes(filter)){
-                           
-                            addRow('datas', row);
-                        }
-                    }
-
-                    paging[0].innerHTML = "";
-                    pagination();
-                }else{
-                    table.innerHTML = "";
-                    for(var i = 0 ; i< dataArray.length;i++){
-                        addRow('datas', dataArray[i]);
-                    }
-                    paging[0].innerHTML = "";
-                    pagination();
-                }
-                
-            }
-
-
+            init();
+        });        
         </script>
 </body>
 
